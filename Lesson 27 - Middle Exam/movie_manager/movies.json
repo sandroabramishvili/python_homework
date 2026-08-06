@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Princess Mononoke",
+    "director": "Hayao Miyazaki",
+    "release_year": 1997
+  },
+  {
+    "title": "The Swimmer",
+    "director": "Frank Perry",
+    "release_year": 1968
+  },
+  {
+    "title": "Fight Club",
+    "director": "David Fincher",
+    "release_year": 1999
+  },
+  {
+    "title": "Inception",
+    "director": "Christopher Nolan",
+    "release_year": 2010
+  },
+  {
+    "title": "Repo Man",
+    "director": "Alex Cox",
+    "release_year": 1984
+  },
+  {
+    "title": "Fight Club",
+    "director": "Sandro Abramishvili",
+    "release_year": 1999
+  }
+]
