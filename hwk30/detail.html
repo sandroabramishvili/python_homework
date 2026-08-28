@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo Details</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <a href="index.html" class="back-link">&larr; Back to dashboard</a>
+      <h1>Todo Details</h1>
+    </header>
+
+    <div id="loading" class="loading">Loading todo...</div>
+    <div id="error" class="error hidden"></div>
+
+    <section id="detailCard" class="detail-card hidden">
+      <h2 id="detailTitle" class="detail-title"></h2>
+
+      <dl class="detail-fields">
+        <div class="detail-field">
+          <dt>ID</dt>
+          <dd id="detailId"></dd>
+        </div>
+        <div class="detail-field">
+          <dt>User ID</dt>
+          <dd id="detailUserId"></dd>
+        </div>
+        <div class="detail-field">
+          <dt>Title</dt>
+          <dd id="detailFullTitle"></dd>
+        </div>
+        <div class="detail-field">
+          <dt>Completed</dt>
+          <dd id="detailCompleted"></dd>
+        </div>
+      </dl>
+    </section>
+  </div>
+
+  <script src="detail.js"></script>
+</body>
+</html>

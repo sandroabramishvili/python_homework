@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Todo Dashboard</h1>
+      <p class="subtitle">Browse, search, and filter todos from JSONPlaceholder</p>
+    </header>
+
+    <section class="controls">
+      <div class="control-group">
+        <label for="search">Search by title</label>
+        <input type="text" id="search" placeholder="Type to search..." autocomplete="off" />
+      </div>
+
+      <div class="control-group">
+        <label for="userFilter">Filter by User ID</label>
+        <select id="userFilter">
+          <option value="all">All users</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <label for="completedFilter">Filter by status</label>
+        <select id="completedFilter">
+          <option value="all">All</option>
+          <option value="true">Completed</option>
+          <option value="false">Not completed</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <label for="pageSize">Items per page</label>
+        <select id="pageSize">
+          <option value="10">10</option>
+          <option value="20">20</option>
+          <option value="50">50</option>
+          <option value="100">100</option>
+        </select>
+      </div>
+    </section>
+
+    <p id="resultsInfo" class="results-info"></p>
+
+    <div id="loading" class="loading">Loading todos...</div>
+    <div id="error" class="error hidden"></div>
+
+    <ul id="todoList" class="todo-list"></ul>
+
+    <nav id="pagination" class="pagination"></nav>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
